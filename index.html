@@ -23,7 +23,7 @@
               <p>I'm a Master's student in the <a href="https://icontrol.ri.cmu.edu/">Intelligent Control Lab</a> at <a href="https://www.ri.cmu.edu/">Carnegie Mellon University Robotics Institute</a>. I am extremely fortunate to be advised by <a href="https://www.cs.cmu.edu/~cliu6/">Professor Changliu Liu</a> and <a href="https://www.ri.cmu.edu/ri-faculty/john-m-dolan/">Professor John Dolan</a>. 
               </p>
               <p>
-              I work on safe control and motion planning, with quadruped and drone applications. My goal is to create safe and efficient autonomous systems that can operate in complex and dynamic environments.</p>
+              I work on safe control theory and performant robot learning, with humanoid, quadruped, and drone applications. My goal is to create safe and efficient autonomous systems that can operate in complex and dynamic environments.</p>
               </p>
               <p>
                 Prior to CMU, I earned my B.S. (2023) from UC Berkeley with a major in <a href="https://me.berkeley.edu/">Mechanical Engineering</a> and a minor in <a href="https://eecs.berkeley.edu/">EECS</a>. During my time at Berkeley, I did safe reinforcement learning research under <a href="https://hybrid-robotics.berkeley.edu/koushil/">Professor Koushil Sreenath</a> in the <a href="https://hybrid-robotics.berkeley.edu/">Hybrid Robotics Group</a>. 
@@ -78,9 +78,8 @@
               </p>
             </td>
           </tr>
-
-
         </tbody></table>
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
@@ -93,15 +92,33 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Peer-Reviewed Publications</heading>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img style="width:105%;max-width:105%" src="images/sia_go2.png">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Safe Control of Quadruped in Varying Dynamics via Safety Index Adaptation</papertitle>
+              <br>
+              <strong>Kai S. Yun</strong>,
+              Rui Chen,
+              Chase Dunaway,
+              John M. Dolan,
+              Changliu Liu
+              <br>
+              <em>Submitted to International Conference on Robotics and Automation (ICRA), 2025.</em>
+              <br>
+              <a href="https://www.arxiv.org/abs/2409.09882">Arxiv</a> | <a href="https://youtu.be/_WUt6ltCHkc">Video</a>
+              <br>
+              <p></p>
+              <p> 
+                We deploy Safety Index Adaptation (SIA) for a quadruped robot to safely navigate in varying dynamics. 
+                SIA enables real-time adaptation of safety indices to ensure provable safety. 
+                With SIA, the quadruped carries packages of varying weights and sizes while navigating through obstacles without failure. 
+                Moreover, we introduce a novel linear model for varying quadruped dynamics and a method to identify the changing dynamics. 
+                We demonstrate the effectiveness of SIA in simulation and hardware experiments.
+              </p>
             </td>
           </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> -->
-
 
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -186,10 +203,58 @@
               </p>
             </td>
           </tr>
-
-
         </tbody></table>
 
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <heading>Projects</heading>
+          </td>
+        </tr>
+      </tbody></table>
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        
+        <tr>
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <img style="width:105%;max-width:105%" src="images/g1.png">
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <papertitle>Safe Humanoid Operation and Teleoperation</papertitle>
+            <!-- <br>
+            <a href="https://www.youtube.com/watch?v=xv5zaImMktg&feature=youtu.be">Video</a> -->
+            <br>
+            <p></p>
+            <p> 
+              <strong>(Still in development!)</strong> In this project, we are developing an open-source package for safe control of Unitree's G1 humanoid robot. 
+              This package includes various safe controllers and planners to allow reactive safety for humanoid's upper body. 
+              All the methods are provably safe and anyone can use this package to ensure safety in their humanoid robot while developing new controllers. 
+              We are also developing a teleoperation system for the humanoid robot, which allows the robot to be controlled by a human operator in real-time.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <img style="width:105%;max-width:105%" src="images/drone_pendulum.png">
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <papertitle>Balancing an inverted pendulum on quadrotor with LQR</papertitle>
+            <br>
+            <a href="https://www.youtube.com/watch?v=xv5zaImMktg&feature=youtu.be">Video</a>
+            <br>
+            <p></p>
+            <p> 
+              For this project, I implemented a Linear Quadratic Regulator (LQR) controller to balance an inverted pendulum on a quadrotor. 
+              I built the quadrotor, named "Danaus-12", with PX4-Autopilot firmware. A carbon fiber tube is used as the pendulum and it is not mechanically 
+              attached to the quadrotor. Instead, it simply rests on the quadrotor and the LQR controller is used to balance the pendulum. 
+              The quadrotor is controlled with an offboard computer and I used a Vicon motion capture system to track the positions of the quadrotor and pendulum.  
+              This work is based on <a href="https://ieeexplore.ieee.org/document/5980244">"A flying inverted pendulum"</a>, by Markus Hehn and Raffaello D'Andrea from ETH.
+            </p>
+          </td>
+        </tr>
+
+      </tbody></table>
+        
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
             <td>
@@ -233,6 +298,7 @@
             </td>
           </tr>
         </tbody></table>
+
       </td>
     </tr>
   </table>
