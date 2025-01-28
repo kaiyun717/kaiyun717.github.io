@@ -136,7 +136,7 @@ span.highlight {
 }
 
 .news-container {
-  max-height: 300px; /* Adjust height as needed */
+  max-height: 180px; /* Adjust height as needed */
   overflow-y: scroll;
   padding-right: 10px; /* Optional: To avoid clipping of content */
   border: 1px solid #ddd; /* Optional: Add a border for clarity */
